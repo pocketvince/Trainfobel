@@ -10,6 +10,8 @@ Automation of collecting and publishing information on Twitter regarding SNCB an
 
 20230523: data search, retrieve api key, write script to tweet head file
 
+20230523: improvement of the published text and creation of a stats tool to publish the previous day's disruptions
+
 ## Contributing
 
 Readme generator: https://www.makeareadme.com/
