@@ -8,7 +8,7 @@ fichier_texte = sys.argv[1]
 # Configuration de l'API Twitter
 consumer_key = '****'
 consumer_secret = '****'
-access_token = '****'
+access_token = '*****'
 access_token_secret = '****'
 
 # Authentification auprès de l'API Twitter
