@@ -98,7 +98,9 @@ done
 #Retirer les doublons
 sort "$fichier_md5" | uniq > temp_md ; rm "$fichier_md5" ; mv temp_md "$fichier_md5"
 
-# Ajouter les commandes dans tempo.sh
+# Ajouter les commandes dans tempo.sh uniquement si nous sommes entre 4h et 23h
+heure_actuelle=$(date +%H)
+if [[ heure_actuelle -ge 4 && heure_actuelle -lt 23 ]]; then
 echo "#!/bin/bash" > "$date-tempo.sh"
 echo "echo Start tempo" >> "$date-tempo.sh"
 printf "%s\n" "${commandes_tempo[@]}" >> "$date-tempo.sh"
@@ -106,6 +108,8 @@ echo "echo End tempo" >> "$date-tempo.sh"
 chmod +x "$date-tempo.sh"
 ./$date-tempo.sh
 rm "$date-tempo.sh"
+fi
+
 ####Stats
 directory="/root/trainfobel/stats/$date"
 mkdir -p /root/trainfobel/stats
