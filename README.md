@@ -2,6 +2,8 @@
 Automation of collecting and publishing information on Twitter regarding SNCB and Belgian railway traffic in general.
 
 ## Update:
+20230531: create stats report, add argument in reduce_argument, block tweets if made between 11pm and 4am
+
 20230528: twitter export request to start a text analysis to reduce tweets publication and shorten text
 
 20230525: script generate infinite files (todo: create a database containing md5sum results and then delete the file)
