@@ -1,7 +1,9 @@
-# 👉TRAINFOBEL🚉🔴 [Status: Spaghetti Code]
+# 👉TRAINFOBEL🚉🔴
 Automation of collecting and publishing information on Twitter regarding SNCB and Belgian railway traffic in general.
 
 ## Update:
+20230722: Unfortunately, the rules of the twitter api have changed again and now it's almost impossible to use the service without paying, I've modified the script so that it uploads the exports daily to https://trainfobel.pocketvince.com and I guess I'll continue to publish the images on the twitter account.
+
 20230531: create stats report, add argument in reduce_argument, block tweets if made between 11pm and 4am
 
 20230528: twitter export request to start a text analysis to reduce tweets publication and shorten text
