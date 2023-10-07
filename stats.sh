@@ -5,7 +5,7 @@ repertoire=/root/trainfobel/stats/$yesterday
 repertoire_racine=/root/trainfobel/
 cd $repertoire
 # Effectue le grep sur le signe ":" pour ne récupérer que les fichiers contenant ":"
-files=$(grep ":" *)
+files=$(grep " : " *)
 
 # Initialise un tableau associatif pour stocker les occurrences
 declare -A occurrences
